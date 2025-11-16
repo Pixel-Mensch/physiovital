@@ -246,6 +246,94 @@ body {
   color: var(--color-muted);
   font-size: 0.97rem;
 }
+/* Praxis Layout */
+
+.praxis-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.praxis-text .section-intro {
+  margin-bottom: 1.25rem;
+  color: #cbd5f5;
+}
+
+.praxis-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.6rem;
+  font-size: 0.95rem;
+  color: #e2e8f0;
+}
+
+.praxis-list li::before {
+  content: "•";
+  margin-right: 0.4rem;
+  color: var(--color-accent);
+}
+
+.praxis-media {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  min-height: 180px;
+  background: radial-gradient(circle at top left, #22c55e, #0ea5e9);
+}
+
+.praxis-photo {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      rgba(15, 23, 42, 0.35),
+      rgba(15, 23, 42, 0.6)
+    ),
+    url("https://images.unsplash.com/photo-1584466977773-e625c37cdd50?auto=format&fit=crop&w=1200&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.praxis-badge {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 0.8rem;
+  background-color: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(8px);
+}
+
+.praxis-badge-main {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.praxis-badge-sub {
+  display: block;
+  font-size: 0.8rem;
+  color: #cbd5f5;
+}
+
+/* Desktop-Layout für Praxis */
+
+@media (min-width: 768px) {
+  .praxis-layout {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .praxis-text {
+    flex: 1.2;
+  }
+
+  .praxis-media {
+    flex: 1;
+    min-height: 240px;
+  }
+}
 
 /* Karten Grid */
 
@@ -279,6 +367,72 @@ body {
 
 .section-dark .card p {
   color: #cbd5f5;
+}
+/* Team Sektion */
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+}
+
+.team-card {
+  background-color: var(--color-light);
+  border-radius: 1rem;
+  padding: 1.2rem 1rem;
+  box-shadow: 0 15px 30px rgba(15, 23, 42, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.team-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 999px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 0.5rem;
+}
+
+/* Platzhalter-Avatare, kannst du später ersetzen */
+.team-avatar-1 {
+  background-image: linear-gradient(135deg, #0ea5e9, #22c55e);
+}
+
+.team-avatar-2 {
+  background-image: linear-gradient(135deg, #f97316, #facc15);
+}
+
+.team-avatar-3 {
+  background-image: linear-gradient(135deg, #a855f7, #ec4899);
+}
+
+.team-card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.team-role {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+.team-text {
+  margin: 0.4rem 0 0;
+  font-size: 0.95rem;
+  color: var(--color-muted);
+}
+
+@media (min-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .team-card {
+    padding-inline: 1.3rem;
+  }
 }
 
 /* Kontaktformular */
