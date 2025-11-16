@@ -671,3 +671,16 @@ body {
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(15, 23, 42, 0.1);
 }
+/* Legal Box */
+
+.legal-box {
+  padding: 1.2rem 1rem;
+  border-radius: 1rem;
+  background-color: var(--color-light);
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.04);
+  font-size: 0.95rem;
+}
+
+.legal-box p {
+  margin: 0 0 0.6rem;
+}
