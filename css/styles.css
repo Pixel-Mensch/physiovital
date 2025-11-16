@@ -684,3 +684,44 @@ body {
 .legal-box p {
   margin: 0 0 0.6rem;
 }
+/* Sticky Call-To-Action Button (mobil) */
+
+.sticky-cta {
+  position: fixed;
+  left: 50%;
+  bottom: 1rem;
+  transform: translateX(-50%);
+  padding: 0.8rem 1.8rem;
+  border-radius: 999px;
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-primary-dark)
+  );
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 15px 30px rgba(15, 23, 42, 0.3);
+  z-index: 50;
+}
+
+/* Nur auf kleinen Screens anzeigen */
+@media (min-width: 768px) {
+  .sticky-cta {
+    display: none;
+  }
+}
+.footer-links {
+  margin: 0.3rem 0;
+}
+
+.footer-links a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
