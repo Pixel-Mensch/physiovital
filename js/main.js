@@ -19,3 +19,19 @@ if (navToggle && mainNav) {
     });
   });
 }
+// Formular-Status anzeigen, wenn ?status=ok oder ?status=error in der URL
+const statusBox = document.getElementById("form-status");
+if (statusBox) {
+  const params = new URLSearchParams(window.location.search);
+  const status = params.get("status");
+
+  if (status === "ok") {
+    statusBox.textContent =
+      "Vielen Dank! Ihre Anfrage wurde erfolgreich versendet. Wir melden uns schnellstmöglich bei Ihnen.";
+    statusBox.classList.add("form-status--visible", "form-status--success");
+  } else if (status === "error") {
+    statusBox.textContent =
+      "Leider ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut oder kontaktieren Sie uns telefonisch.";
+    statusBox.classList.add("form-status--visible", "form-status--error");
+  }
+}

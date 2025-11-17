@@ -15,6 +15,7 @@
         "@context": "https://schema.org",
         "@type": "Physician",
         "name": "PhysioVital – Physiotherapie in Dortmund",
+        "image": "https://www.beispiel-physiovital.de/bilder/social-preview.jpg",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Musterstraße 12",
@@ -43,6 +44,12 @@
     </script>
 
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="Bilder/PhysioVital-Favicon.svg"
+    />
+    <link rel="alternate icon" href="Bilder/PhysioVital-Favicon.png" />
   </head>
   <body>
     <header class="site-header">
@@ -69,28 +76,66 @@
           <a href="#kontakt">Kontakt</a>
         </nav>
       </div>
+      <!-- Canonical URL -->
+      <link rel="canonical" href="https://www.beispiel-physiovital.de" />
+
+      <!-- Open Graph (für Social Media Vorschau) -->
+      <meta
+        property="og:title"
+        content="PhysioVital – Physiotherapie in Dortmund"
+      />
+      <meta
+        property="og:description"
+        content="Moderne Physiotherapie in Dortmund mit individuellen Behandlungen, kurzen Wartezeiten und zentraler Lage."
+      />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://www.beispiel-physiovital.de" />
+      <meta
+        property="og:image"
+        content="https://www.beispiel-physiovital.de/bilder/social-preview.jpg"
+      />
+
+      <!-- Twitter Cards -->
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta
+        name="twitter:title"
+        content="PhysioVital – Physiotherapie in Dortmund"
+      />
+      <meta
+        name="twitter:description"
+        content="PhysioVital bietet moderne Physiotherapie in Dortmund – von Rückenschmerzen über Sportverletzungen bis zur Rehabilitation."
+      />
+      <meta
+        name="twitter:image"
+        content="https://www.beispiel-physiovital.de/bilder/social-preview.jpg"
+      />
     </header>
 
     <main>
       <!-- HERO -->
       <section id="start" class="hero">
         <div class="hero-inner">
-          <p class="hero-kicker">Physiotherapie in Dortmund</p>
+          <p class="hero-kicker">Moderne Physiotherapie in Dortmund</p>
           <h1 class="hero-title">
             Schmerzfrei bewegen.
-            <span>Individuelle Therapie für Ihren Alltag.</span>
+            <span
+              >Individuelle Physiotherapie, die sich an Ihrem Alltag
+              orientiert.</span
+            >
           </h1>
 
           <p class="hero-text">
-            Bei PhysioVital erhalten Sie moderne, evidenzbasierte
-            Physiotherapie. Kassen- und Privatpatienten willkommen.
+            Bei PhysioVital in Dortmund erhalten Sie fundierte, moderne
+            Physiotherapie mit Zeit für Ihr Anliegen. Wir begleiten Sie von der
+            ersten Beschwerde bis zurück in einen aktiven, belastbaren Alltag –
+            ob nach Verletzungen, Operationen oder bei chronischen
+            Rückenschmerzen.
           </p>
 
           <div class="hero-actions">
             <a href="#kontakt" class="btn btn-primary">Termin anfragen</a>
             <a href="#leistungen" class="btn btn-ghost">Leistungen ansehen</a>
           </div>
-
           <ul class="hero-benefits">
             <li>Kurze Wartezeiten</li>
             <li>Individuelle Therapiepläne</li>
@@ -104,36 +149,45 @@
         <div class="section-inner">
           <h2 class="section-title">Unsere Leistungen</h2>
           <p class="section-intro">
-            Wir kombinieren bewährte Therapieformen mit moderner Wissenschaft –
-            für nachhaltige Ergebnisse.
+            Wir kombinieren bewährte physiotherapeutische Behandlungsmethoden
+            mit aktueller medizinischer Erkenntnis. Ziel ist immer, Ihre
+            Schmerzen zu lindern, Beweglichkeit zurückzugeben und Rückfällen
+            vorzubeugen.
           </p>
 
           <div class="card-grid">
             <article class="card">
               <h3>Manuelle Therapie</h3>
               <p>
-                Gelenk- und Weichteilbehandlungen zur Verbesserung der
-                Beweglichkeit.
+                Gelenk- und Weichteilbehandlungen zur Verbesserung von
+                Beweglichkeit, Schmerzreduktion und einer entspannteren
+                Körperhaltung.
               </p>
             </article>
 
             <article class="card">
               <h3>Sportphysiotherapie</h3>
               <p>
-                Professionelle Betreuung bei Verletzungen und Trainingsrückkehr.
+                Betreuung bei akuten und chronischen Sportverletzungen,
+                inklusive Trainingsplanung für den sicheren Wiedereinstieg in
+                Ihr Training.
               </p>
             </article>
 
             <article class="card">
               <h3>Lymphdrainage</h3>
               <p>
-                Sanfte Techniken gegen Schwellungen und post-OP-Beschwerden.
+                Sanfte, rhythmische Techniken zur Behandlung von Lymphödemen und
+                Schwellungen etwa nach Operationen oder Verletzungen.
               </p>
             </article>
 
             <article class="card">
               <h3>Rückentraining</h3>
-              <p>Individuelle Übungen und Coaching für einen starken Rücken.</p>
+              <p>
+                Individuell angepasste Übungen und Coaching für einen starken
+                Rücken – im Beruf, im Alltag und beim Sport.
+              </p>
             </article>
           </div>
         </div>
@@ -145,14 +199,15 @@
           <div class="praxis-text">
             <h2 class="section-title">Ihre Praxis PhysioVital</h2>
             <p class="section-intro">
-              Helle, freundliche Behandlungsräume, moderne Trainingsgeräte und
-              eine ruhige Atmosphäre – damit Sie sich vom ersten Moment an gut
-              aufgehoben fühlen.
+              Helle Behandlungsräume, moderne Trainingsgeräte und eine ruhige
+              Atmosphäre schaffen die Grundlage für eine erfolgreiche Therapie.
             </p>
 
             <ul class="praxis-list">
-              <li>Ebenerdiger Zugang und barrierearme Praxisräume</li>
-              <li>Moderne Behandlungsliegen und Trainingsgeräte</li>
+              <li>Ebenerdiger Zugang und gut erreichbare Praxislage</li>
+              <li>
+                Moderne Behandlungsliegen und funktionelles Trainingsequipment
+              </li>
               <li>Entspannter Wartebereich mit Getränken</li>
               <li>Gute Anbindung an ÖPNV und Parkmöglichkeiten in der Nähe</li>
             </ul>
@@ -173,8 +228,9 @@
         <div class="section-inner">
           <h2 class="section-title">Unser Team</h2>
           <p class="section-intro">
-            Persönliche Betreuung ist uns wichtig. Unser Team aus erfahrenen
-            Therapeutinnen und Therapeuten nimmt sich Zeit für Ihr Anliegen.
+            Uns ist wichtig, dass Sie sich gut aufgehoben fühlen. Unser Team
+            nimmt sich Zeit, hört zu und entwickelt einen Therapieplan, der zu
+            Ihrem Alltag passt.
           </p>
 
           <div class="team-grid">
@@ -183,8 +239,9 @@
               <h3>Sarah Hoffmann</h3>
               <p class="team-role">Leitende Physiotherapeutin</p>
               <p class="team-text">
-                Schwerpunkt auf manueller Therapie, Wirbelsäulenbeschwerden und
-                langfristiger Betreuung von chronischen Schmerzen.
+                Spezialisiert auf Wirbelsäulenbeschwerden und chronische
+                Schmerzen. Legt großen Wert auf verständliche Erklärungen und
+                eine Therapie auf Augenhöhe.
               </p>
             </article>
 
@@ -193,8 +250,8 @@
               <h3>Jonas Weber</h3>
               <p class="team-role">Sportphysiotherapeut</p>
               <p class="team-text">
-                Begleitet Hobby- und Profisportler von der Verletzung bis zurück
-                ins Training – inkl. präventivem Coaching.
+                Betreut Hobby- und Leistungssportler von der Verletzung bis
+                zurück in Wettkampf und Training, inklusive präventiver Übungen.
               </p>
             </article>
 
@@ -203,8 +260,9 @@
               <h3>Lea Mertens</h3>
               <p class="team-role">Lymphdrainage & Rehabilitation</p>
               <p class="team-text">
-                Spezialisiert auf Lymphdrainage, Nachsorge nach Operationen und
-                schonende Mobilisation.
+                Begleitet Patientinnen und Patienten nach Operationen oder
+                Unfällen und sorgt dafür, dass Sie Schritt für Schritt sicher
+                belastbarer werden.
               </p>
             </article>
           </div>
@@ -217,6 +275,7 @@
 
           <div class="review-grid">
             <article class="review-card">
+              <div class="review-stars" aria-hidden="true">★★★★★</div>
               <p class="review-text">
                 „Sehr kompetentes Team! Ich konnte nach wenigen Sitzungen
                 endlich wieder schmerzfrei arbeiten.“
@@ -225,6 +284,7 @@
             </article>
 
             <article class="review-card">
+              <div class="review-stars" aria-hidden="true">★★★★★</div>
               <p class="review-text">
                 „Moderne Praxis, netter Umgang, top Therapie! Absolute
                 Empfehlung.“
@@ -233,6 +293,7 @@
             </article>
 
             <article class="review-card">
+              <div class="review-stars" aria-hidden="true">★★★★★</div>
               <p class="review-text">
                 „Ich habe mich von Anfang an gut betreut gefühlt. Hier wird sich
                 Zeit genommen.“
@@ -244,26 +305,39 @@
       </section>
       <section id="faq" class="section section-accent">
         <div class="section-inner">
-          <h2 class="section-title">Häufige Fragen (FAQ)</h2>
-
+          <h2 class="section-title">Häufige Fragen</h2>
           <div class="faq-list">
             <details>
               <summary>Benötige ich ein Rezept für Physiotherapie?</summary>
               <p>
-                Ja, gesetzlich Versicherte benötigen ein Rezept. Privatpatienten
-                je nach Vertrag.
+                Gesetzlich Versicherte benötigen in der Regel ein Rezept der
+                Haus- oder Fachärztin. Bei Privatversicherungen hängt es vom
+                jeweiligen Tarif ab.
               </p>
             </details>
 
             <details>
               <summary>Wie schnell bekomme ich einen Termin?</summary>
-              <p>In der Regel innerhalb von 3-5 Tagen.</p>
+              <p>
+                Je nach Auslastung erhalten Sie in der Regel innerhalb von drei
+                bis fünf Werktagen einen ersten Behandlungstermin.
+              </p>
             </details>
 
             <details>
-              <summary>Bietet ihr auch Hausbesuche an?</summary>
+              <summary>Was sollte ich zum ersten Termin mitbringen?</summary>
               <p>
-                Ja, auf Anfrage und bei entsprechender ärztlicher Verordnung.
+                Bitte bringen Sie vorhandene Befunde, Ihr Rezept, bequeme
+                Kleidung und wenn möglich Sportschuhe mit.
+              </p>
+            </details>
+
+            <details>
+              <summary>Bietet ihr Hausbesuche an?</summary>
+              <p>
+                Hausbesuche sind nach ärztlicher Verordnung und in einem
+                bestimmten Umkreis möglich. Sprechen Sie uns bei der
+                Terminvereinbarung einfach darauf an.
               </p>
             </details>
           </div>
@@ -298,9 +372,21 @@
           <p class="section-intro">Ein Einblick in unsere Räumlichkeiten.</p>
 
           <div class="gallery-grid">
-            <div class="gallery-item gallery-1"></div>
-            <div class="gallery-item gallery-2"></div>
-            <div class="gallery-item gallery-3"></div>
+            <div
+              class="gallery-item gallery-1"
+              role="img"
+              aria-label="Heller Empfangsbereich der Physiotherapie-Praxis in Dortmund"
+            ></div>
+            <div
+              class="gallery-item gallery-2"
+              role="img"
+              aria-label="Moderner Behandlungsraum mit Liege und Trainingsgeräten"
+            ></div>
+            <div
+              class="gallery-item gallery-3"
+              role="img"
+              aria-label="Trainingsbereich für individuelles Rückentraining und Rehabilitation"
+            ></div>
           </div>
         </div>
       </section>
@@ -331,17 +417,39 @@
           <p class="section-intro">
             Schicken Sie uns Ihre Terminanfrage ganz einfach online.
           </p>
+          <div id="form-status" class="form-status" aria-live="polite"></div>
 
-          <form class="contact-form">
+          <form
+            class="contact-form"
+            action="contact.php"
+            method="post"
+            novalidate
+          >
+            ...
+          </form>
+
+          <form
+            class="contact-form"
+            action="contact.php"
+            method="post"
+            novalidate
+          >
             <div class="form-row">
               <label for="name">Name</label>
-              <input id="name" type="text" placeholder="Ihr Name" required />
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Ihr Name"
+                required
+              />
             </div>
 
             <div class="form-row">
               <label for="email">E-Mail</label>
               <input
                 id="email"
+                name="email"
                 type="email"
                 placeholder="ihre@mail.de"
                 required
@@ -350,12 +458,17 @@
 
             <div class="form-row">
               <label for="phone">Telefon (optional)</label>
-              <input id="phone" type="tel" placeholder="z. B. 0156 12345678" />
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                placeholder="z. B. 0156 12345678"
+              />
             </div>
 
             <div class="form-row">
               <label for="concern">Behandlungswunsch</label>
-              <select id="concern">
+              <select id="concern" name="concern">
                 <option>Rückenbeschwerden</option>
                 <option>Sportverletzung</option>
                 <option>Nach Operation</option>
@@ -368,9 +481,19 @@
               <label for="message">Nachricht</label>
               <textarea
                 id="message"
+                name="message"
                 rows="4"
                 placeholder="Beschreiben Sie Ihr Anliegen und mögliche Zeitfenster."
               ></textarea>
+            </div>
+            <div class="form-row form-row-hidden">
+              <label for="website">Ihre Website</label>
+              <input
+                id="website"
+                name="website"
+                type="text"
+                autocomplete="off"
+              />
             </div>
 
             <button class="btn btn-primary" type="submit">
@@ -383,9 +506,10 @@
     <section id="impressum" class="section section-light">
       <div class="section-inner">
         <h2 class="section-title">Impressum</h2>
-        <p class="section-intro">
-          Hinweis: Diese Inhalte sind Platzhalter und müssen vor dem Livegang
-          rechtlich geprüft und angepasst werden.
+        <p class="section-intro" style="color: #dc2626; font-weight: 600">
+          Hinweis: Dieses Impressum ist ein Platzhalter. Die endgültigen Angaben
+          müssen vom Kunden selbst geliefert oder durch einen rechtssicheren
+          Generator/Anwalt erstellt werden.
         </p>
 
         <div class="legal-box">
@@ -413,10 +537,11 @@
     <section id="datenschutz" class="section section-light">
       <div class="section-inner">
         <h2 class="section-title">Datenschutzerklärung (Kurzfassung)</h2>
-        <p class="section-intro">
-          Diese Angaben sind nur ein Beispiel. Für eine rechtssichere
-          Datenschutzerklärung bitte einen Generator oder eine Rechtsberatung
-          nutzen.
+        <p class="section-intro" style="color: #dc2626; font-weight: 600">
+          Hinweis: Diese Datenschutzerklärung ist ein Platzhalter und nicht
+          rechtlich gültig. Der Kunde muss vor Livegang eine vollständige,
+          rechtskonforme Datenschutzerklärung bereitstellen (z. B. über eRecht24
+          oder einen Anwalt).
         </p>
 
         <div class="legal-box">
@@ -447,7 +572,8 @@
         </p>
 
         <p class="footer-meta">
-          © <span id="year"></span> PhysioVital. Alle Rechte vorbehalten.
+          © <span id="year"></span> PhysioVital (Platzhalter). Diese Website ist
+          ein Demo-Projekt und enthält keine echten rechtlichen Angaben.
         </p>
       </div>
     </footer>
