@@ -31,6 +31,17 @@ _(oder später die echte Domain des Kunden)_
 - Saubere Datei- und Code-Struktur
 - Barrierearme Navigation
 
+### 🎬 **Neue Premium-Features (2025)**
+
+- **Scroll-Animationen** mit Intersection Observer (fade-in Effekte)
+- **Counter-Animation** für Hero-Panel Zahlen
+- **Back-to-Top Button** mit Smooth Scroll
+- **Erweiterte Formular-Validierung** clientseitig mit Live-Feedback
+- **Cookie-Banner** DSGVO-konform mit LocalStorage
+- **Performance-Optimierungen**: Preconnect, Meta-Tags, Focus-States
+- **SEO-Optimierung**: robots.txt, sitemap.xml, .htaccess
+- **Accessibility**: Verbesserte Focus-States, Reduced Motion Support
+
 ---
 
 ## 🧩 Tech-Stack
@@ -65,6 +76,9 @@ _(oder später die echte Domain des Kunden)_
 └── (Galerie- und Praxisbilder)
 /contact.php
 /index.html
+/robots.txt
+/sitemap.xml
+/.htaccess
 ```
 
 ---

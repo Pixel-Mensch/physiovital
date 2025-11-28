@@ -1,0 +1,15 @@
+# robots.txt für PhysioVital
+
+User-agent: *
+Allow: /
+
+# Sitemap-Location (vor Livegang anpassen!)
+Sitemap: https://www.beispiel-physiovital.de/sitemap.xml
+
+# Optional: Crawl-Delay für schonenderes Crawling
+# Crawl-delay: 10
+
+# Wichtige Verzeichnisse ausschließen (optional)
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /vendor/
