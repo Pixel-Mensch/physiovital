@@ -23,11 +23,11 @@ if ($website !== '') {
 
 // Basis-Validierung
 if ($name === '' || $email === '' || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    header('Location: index.html#kontakt?status=error');
+    header('Location: index.html?status=error#kontakt');
     exit;
 }
 
-// >>> HIER die Zieladresse später anpassen <<< 
+// >>> HIER die Zieladresse später anpassen <<<
 $to = 'pixelmensch@mail.de';
 
 $subject = 'Neue Terminanfrage über die Website';
@@ -40,10 +40,11 @@ $body = "Neue Anfrage von der Website:\n\n"
 
 $headers = "From: PhysioVital Website <no-reply@physiovital.de>\r\n";
 $headers .= "Reply-To: $email\r\n";
+$headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
 if (mail($to, $subject, $body, $headers)) {
-    header('Location: index.html#kontakt?status=ok');
+    header('Location: index.html?status=ok#kontakt');
 } else {
-    header('Location: index.html#kontakt?status=error');
+    header('Location: index.html?status=error#kontakt');
 }
 exit;

@@ -4,12 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- SEO -->
+    <!-- SEO Basics -->
     <title>PhysioVital – Physiotherapie in Dortmund</title>
     <meta
       name="description"
       content="PhysioVital ist Ihre moderne Physiotherapie in Dortmund. Individuelle Behandlungen, moderne Ausstattung und Online-Terminvereinbarung."
     />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.beispiel-physiovital.de" />
+
+    <!-- Open Graph (für Social Media Vorschau) -->
+    <meta
+      property="og:title"
+      content="PhysioVital – Physiotherapie in Dortmund"
+    />
+    <meta
+      property="og:description"
+      content="Moderne Physiotherapie in Dortmund mit individuellen Behandlungen, kurzen Wartezeiten und zentraler Lage."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.beispiel-physiovital.de" />
+    <meta
+      property="og:image"
+      content="https://www.beispiel-physiovital.de/bilder/social-preview.jpg"
+    />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="PhysioVital – Physiotherapie in Dortmund"
+    />
+    <meta
+      name="twitter:description"
+      content="PhysioVital bietet moderne Physiotherapie in Dortmund – von Rückenschmerzen über Sportverletzungen bis zur Rehabilitation."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.beispiel-physiovital.de/bilder/social-preview.jpg"
+    />
+
+    <!-- Optional: Theme Color für Mobile Browser -->
+    <meta name="theme-color" content="#0ea5e9" />
+
+    <!-- JSON-LD Schema.org -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -76,71 +115,57 @@
           <a href="#kontakt">Kontakt</a>
         </nav>
       </div>
-      <!-- Canonical URL -->
-      <link rel="canonical" href="https://www.beispiel-physiovital.de" />
-
-      <!-- Open Graph (für Social Media Vorschau) -->
-      <meta
-        property="og:title"
-        content="PhysioVital – Physiotherapie in Dortmund"
-      />
-      <meta
-        property="og:description"
-        content="Moderne Physiotherapie in Dortmund mit individuellen Behandlungen, kurzen Wartezeiten und zentraler Lage."
-      />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://www.beispiel-physiovital.de" />
-      <meta
-        property="og:image"
-        content="https://www.beispiel-physiovital.de/bilder/social-preview.jpg"
-      />
-
-      <!-- Twitter Cards -->
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta
-        name="twitter:title"
-        content="PhysioVital – Physiotherapie in Dortmund"
-      />
-      <meta
-        name="twitter:description"
-        content="PhysioVital bietet moderne Physiotherapie in Dortmund – von Rückenschmerzen über Sportverletzungen bis zur Rehabilitation."
-      />
-      <meta
-        name="twitter:image"
-        content="https://www.beispiel-physiovital.de/bilder/social-preview.jpg"
-      />
     </header>
 
     <main>
       <!-- HERO -->
       <section id="start" class="hero">
         <div class="hero-inner">
-          <p class="hero-kicker">Moderne Physiotherapie in Dortmund</p>
-          <h1 class="hero-title">
-            Schmerzfrei bewegen.
-            <span
-              >Individuelle Physiotherapie, die sich an Ihrem Alltag
-              orientiert.</span
-            >
-          </h1>
+          <div class="hero-copy">
+            <p class="hero-kicker">Moderne Physiotherapie in Dortmund</p>
+            <h1 class="hero-title">
+              Schmerzfrei bewegen
+              <span
+                >Individuelle Physiotherapie, die zu Ihrem Alltag passt.</span
+              >
+            </h1>
 
-          <p class="hero-text">
-            Bei PhysioVital in Dortmund erhalten Sie fundierte, moderne
-            Physiotherapie mit Zeit für Ihr Anliegen. Wir begleiten Sie von der
-            ersten Beschwerde bis zurück in einen aktiven, belastbaren Alltag –
-            ob nach Verletzungen, Operationen oder bei chronischen
-            Rückenschmerzen.
-          </p>
+            <p class="hero-text">
+              Bei PhysioVital in Dortmund erhalten Sie fundierte, moderne
+              Physiotherapie mit Zeit für Ihr Anliegen. Wir begleiten Sie von
+              der ersten Beschwerde bis zurück in einen aktiven, belastbaren
+              Alltag nach Verletzungen, Operationen oder bei chronischen
+              Rückenschmerzen.
+            </p>
 
-          <div class="hero-actions">
-            <a href="#kontakt" class="btn btn-primary">Termin anfragen</a>
-            <a href="#leistungen" class="btn btn-ghost">Leistungen ansehen</a>
+            <div class="hero-actions">
+              <a href="#kontakt" class="btn btn-primary">Termin anfragen</a>
+              <a href="#leistungen" class="btn btn-ghost">Leistungen ansehen</a>
+            </div>
+
+            <ul class="hero-benefits">
+              <li>Kurze Wartezeiten</li>
+              <li>Individuelle Therapiepläne</li>
+              <li>Zentrale Lage in Dortmund</li>
+            </ul>
           </div>
-          <ul class="hero-benefits">
-            <li>Kurze Wartezeiten</li>
-            <li>Individuelle Therapiepläne</li>
-            <li>Zentrale Lage in Dortmund</li>
-          </ul>
+
+          <aside class="hero-panel" aria-label="Highlights der Praxis">
+            <div class="hero-panel-card">
+              <p class="hero-panel-label">Ersttermin</p>
+              <p class="hero-panel-value">in 3 bis 5 Werktagen</p>
+              <p class="hero-panel-sub">Je nach Auslastung der Praxis</p>
+            </div>
+            <div class="hero-panel-card hero-panel-card--accent">
+              <p class="hero-panel-label">Patientenzufriedenheit</p>
+              <p class="hero-panel-value">4,9 / 5 Sterne</p>
+              <p class="hero-panel-sub">Basierend auf echten Bewertungen</p>
+            </div>
+            <div class="hero-panel-foot">
+              <span class="hero-pill">Seit 2015 in Dortmund</span>
+              <span class="hero-pill hero-pill--soft">Kassen und privat</span>
+            </div>
+          </aside>
         </div>
       </section>
 
@@ -270,74 +295,103 @@
       </section>
       <section id="bewertungen" class="section section-light">
         <div class="section-inner">
-          <h2 class="section-title">Was unsere Patienten sagen</h2>
-          <p class="section-intro">Echte Stimmen – echte Ergebnisse.</p>
+          <h2 class="section-title">
+            Was unsere Patientinnen und Patienten sagen
+          </h2>
+          <p class="section-intro">
+            Eine Auswahl an Rückmeldungen von Menschen, die wir auf ihrem Weg
+            zurück in einen belastbaren Alltag begleitet haben.
+          </p>
 
           <div class="review-grid">
             <article class="review-card">
               <div class="review-stars" aria-hidden="true">★★★★★</div>
               <p class="review-text">
-                „Sehr kompetentes Team! Ich konnte nach wenigen Sitzungen
-                endlich wieder schmerzfrei arbeiten.“
+                „Nach einem Bandscheibenvorfall war ich lange verunsichert. In
+                der Praxis wurde mir alles verständlich erklärt und ich habe
+                einen klaren Trainingsplan bekommen. Heute kann ich wieder
+                arbeiten – ohne ständige Rückenschmerzen.“
               </p>
-              <p class="review-author">– Lara K.</p>
+              <p class="review-author">– Lara K., 38 Jahre</p>
             </article>
 
             <article class="review-card">
               <div class="review-stars" aria-hidden="true">★★★★★</div>
               <p class="review-text">
-                „Moderne Praxis, netter Umgang, top Therapie! Absolute
-                Empfehlung.“
+                „Sehr moderne Praxis, freundliches Team und strukturierte
+                Behandlung. Besonders gut gefällt mir, dass Übungen für zuhause
+                gezeigt werden, die ich leicht in meinen Alltag einbauen kann.“
               </p>
-              <p class="review-author">– Mehmet A.</p>
+              <p class="review-author">– Mehmet A., 44 Jahre</p>
             </article>
 
             <article class="review-card">
               <div class="review-stars" aria-hidden="true">★★★★★</div>
               <p class="review-text">
-                „Ich habe mich von Anfang an gut betreut gefühlt. Hier wird sich
-                Zeit genommen.“
+                „Nach meiner Knie-OP wurde ich hier Schritt für Schritt wieder
+                belastbarer. Die Mischung aus manueller Behandlung und gezieltem
+                Training hat mir viel Sicherheit gegeben.“
               </p>
-              <p class="review-author">– Jonas F.</p>
+              <p class="review-author">– Jonas F., 29 Jahre</p>
             </article>
           </div>
         </div>
       </section>
       <section id="faq" class="section section-accent">
         <div class="section-inner">
-          <h2 class="section-title">Häufige Fragen</h2>
+          <h2 class="section-title">Häufige Fragen zur Behandlung</h2>
+          <p class="section-intro">
+            Viele Fragen tauchen immer wieder auf – hier beantworten wir die
+            wichtigsten vorab.
+          </p>
+
           <div class="faq-list">
             <details>
-              <summary>Benötige ich ein Rezept für Physiotherapie?</summary>
+              <summary>Benötige ich ein Rezept für die Behandlung?</summary>
               <p>
-                Gesetzlich Versicherte benötigen in der Regel ein Rezept der
-                Haus- oder Fachärztin. Bei Privatversicherungen hängt es vom
-                jeweiligen Tarif ab.
+                Gesetzlich Versicherte benötigen in der Regel ein Rezept von der
+                Haus- oder Fachärztin bzw. dem Haus- oder Facharzt.
+                Privatversicherte und Selbstzahler haben je nach Tarif und
+                Vereinbarung teilweise mehr Spielraum.
               </p>
             </details>
 
             <details>
               <summary>Wie schnell bekomme ich einen Termin?</summary>
               <p>
-                Je nach Auslastung erhalten Sie in der Regel innerhalb von drei
-                bis fünf Werktagen einen ersten Behandlungstermin.
+                Je nach Auslastung der Praxis erhalten Sie meist innerhalb von
+                drei bis fünf Werktagen einen Ersttermin. Notfälle und starke
+                akute Beschwerden versuchen wir nach Möglichkeit bevorzugt
+                einzuplanen.
+              </p>
+            </details>
+
+            <details>
+              <summary>Wie läuft der erste Termin ab?</summary>
+              <p>
+                Beim ersten Termin sprechen wir zunächst über Ihre Beschwerden
+                und Ihren Alltag, führen eine ausführliche Befundaufnahme durch
+                und starten anschließend direkt mit der passenden Behandlung.
+                Sie erhalten außerdem eine Empfehlung, wie es weitergeht.
               </p>
             </details>
 
             <details>
               <summary>Was sollte ich zum ersten Termin mitbringen?</summary>
               <p>
-                Bitte bringen Sie vorhandene Befunde, Ihr Rezept, bequeme
-                Kleidung und wenn möglich Sportschuhe mit.
+                Bitte bringen Sie vorhandene Befunde oder MRT-/Röntgenberichte,
+                Ihr Rezept, ein Handtuch sowie bequeme Kleidung mit. Sportschuhe
+                sind hilfreich, insbesondere bei aktiven Übungsprogrammen.
               </p>
             </details>
 
             <details>
-              <summary>Bietet ihr Hausbesuche an?</summary>
+              <summary>Bietet PhysioVital auch Hausbesuche an?</summary>
               <p>
-                Hausbesuche sind nach ärztlicher Verordnung und in einem
-                bestimmten Umkreis möglich. Sprechen Sie uns bei der
-                Terminvereinbarung einfach darauf an.
+                Hausbesuche sind nach ärztlicher Verordnung und innerhalb eines
+                definierten Radius um die Praxis möglich. Sprechen Sie uns
+                einfach bei der Terminvereinbarung darauf an – wir prüfen dann
+                gemeinsam die Möglichkeiten.
               </p>
             </details>
           </div>
@@ -346,46 +400,63 @@
       <section id="blog" class="section section-light">
         <div class="section-inner">
           <h2 class="section-title">Neuigkeiten & Ratgeber</h2>
-          <p class="section-intro">Wertvolle Tipps für Ihren Alltag.</p>
+          <p class="section-intro">
+            Kurze, praxisnahe Tipps rund um Bewegung, Schmerz und Regeneration –
+            direkt aus dem Behandlungsalltag.
+          </p>
 
           <div class="blog-grid">
             <article class="blog-card">
-              <h3>5 Tipps für einen gesunden Rücken</h3>
-              <p>Einfache Übungen für zuhause und zwischendurch.</p>
+              <h3>5 Alltagsgewohnheiten für einen starken Rücken</h3>
+              <p>
+                Wie kleine Veränderungen im Sitzen, Stehen und Heben Ihren
+                Rücken langfristig entlasten – inklusive einfacher Übungen für
+                zuhause.
+              </p>
             </article>
 
             <article class="blog-card">
-              <h3>Der Unterschied zwischen Physio und Massage</h3>
-              <p>Warum eine Therapie medizinisch fundiert ist.</p>
+              <h3>Physiotherapie oder Massage – was ist der Unterschied?</h3>
+              <p>
+                Wann eine medizinisch fundierte Therapie sinnvoll ist, und in
+                welchen Fällen eine Entspannungsmassage ausreicht.
+              </p>
             </article>
 
             <article class="blog-card">
-              <h3>Wie oft sollte man sich behandeln lassen?</h3>
-              <p>Antworten auf die häufigsten Fragen.</p>
+              <h3>Wie viele Behandlungen sind wirklich nötig?</h3>
+              <p>
+                Warum die optimale Behandlungsdauer immer von Ihrem Befund,
+                Ihrem Ziel und Ihrem Alltag abhängt – und wie wir bei
+                PhysioVital planen.
+              </p>
             </article>
           </div>
         </div>
       </section>
       <section id="galerie" class="section section-dark">
         <div class="section-inner">
-          <h2 class="section-title">Galerie</h2>
-          <p class="section-intro">Ein Einblick in unsere Räumlichkeiten.</p>
+          <h2 class="section-title">Einblick in unsere Räumlichkeiten</h2>
+          <p class="section-intro">
+            Helle Behandlungsräume, ein moderner Trainingsbereich und kurze Wege
+            – damit Sie sich von Anfang an gut aufgehoben fühlen.
+          </p>
 
           <div class="gallery-grid">
             <div
               class="gallery-item gallery-1"
               role="img"
-              aria-label="Heller Empfangsbereich der Physiotherapie-Praxis in Dortmund"
+              aria-label="Empfangsbereich der Physiotherapie PhysioVital in Dortmund"
             ></div>
             <div
               class="gallery-item gallery-2"
               role="img"
-              aria-label="Moderner Behandlungsraum mit Liege und Trainingsgeräten"
+              aria-label="Moderner Behandlungsraum der Praxis PhysioVital mit Liege und Trainingsgeräten"
             ></div>
             <div
               class="gallery-item gallery-3"
               role="img"
-              aria-label="Trainingsbereich für individuelles Rückentraining und Rehabilitation"
+              aria-label="Trainingsbereich von PhysioVital für Rücken- und Rehatraining"
             ></div>
           </div>
         </div>
@@ -413,93 +484,134 @@
       <!-- KONTAKT -->
       <section id="kontakt" class="section section-accent">
         <div class="section-inner">
-          <h2 class="section-title">Kontakt & Termin</h2>
+          <h2 class="section-title">Kontakt & Terminanfrage</h2>
           <p class="section-intro">
-            Schicken Sie uns Ihre Terminanfrage ganz einfach online.
+            Mit diesem Formular schicken Sie uns eine unverbindliche
+            Terminanfrage. Wir melden uns persönlich zur Terminbestätigung oder
+            mit Rückfragen bei Ihnen.
           </p>
-          <div id="form-status" class="form-status" aria-live="polite"></div>
 
-          <form
-            class="contact-form"
-            action="contact.php"
-            method="post"
-            novalidate
-          >
-            ...
-          </form>
+          <div class="contact-layout">
+            <div class="contact-info">
+              <h3 class="contact-subtitle">So erreichen Sie uns</h3>
+              <p>
+                Sie sind unsicher, welche Behandlung passend ist, oder möchten
+                lieber anrufen? Kein Problem – wir beraten Sie gern persönlich.
+              </p>
 
-          <form
-            class="contact-form"
-            action="contact.php"
-            method="post"
-            novalidate
-          >
-            <div class="form-row">
-              <label for="name">Name</label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                placeholder="Ihr Name"
-                required
-              />
+              <ul class="contact-list">
+                <li>
+                  <span class="contact-label">Telefon</span>
+                  <span class="contact-value">0231 123456</span>
+                </li>
+                <li>
+                  <span class="contact-label">E-Mail</span>
+                  <span class="contact-value">info@physiovital.de</span>
+                </li>
+                <li>
+                  <span class="contact-label">Adresse</span>
+                  <span class="contact-value"
+                    >Musterstraße 12, 44147 Dortmund</span
+                  >
+                </li>
+              </ul>
+
+              <p class="contact-note">
+                In der Regel erhalten Sie innerhalb von drei bis fünf Werktagen
+                einen Ersttermin. Notfälle versuchen wir nach Möglichkeit
+                bevorzugt einzuplanen.
+              </p>
+
+              <p class="contact-privacy">
+                Hinweis: Mit dem Absenden Ihrer Anfrage werden die angegebenen
+                Daten zur Bearbeitung Ihrer Anfrage verarbeitet. Die endgültige,
+                rechtskonforme Datenschutzerklärung muss vor Livegang vom Kunden
+                bereitgestellt werden.
+              </p>
             </div>
 
-            <div class="form-row">
-              <label for="email">E-Mail</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="ihre@mail.de"
-                required
-              />
-            </div>
+            <div class="contact-form-wrapper">
+              <div
+                id="form-status"
+                class="form-status"
+                aria-live="polite"
+              ></div>
 
-            <div class="form-row">
-              <label for="phone">Telefon (optional)</label>
-              <input
-                id="phone"
-                name="phone"
-                type="tel"
-                placeholder="z. B. 0156 12345678"
-              />
-            </div>
+              <form
+                class="contact-form"
+                action="contact.php"
+                method="post"
+                novalidate
+              >
+                <div class="form-row">
+                  <label for="name">Name</label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="Ihr Name"
+                    required
+                  />
+                </div>
 
-            <div class="form-row">
-              <label for="concern">Behandlungswunsch</label>
-              <select id="concern" name="concern">
-                <option>Rückenbeschwerden</option>
-                <option>Sportverletzung</option>
-                <option>Nach Operation</option>
-                <option>Lymphdrainage</option>
-                <option>Allgemeine Anfrage</option>
-              </select>
-            </div>
+                <div class="form-row">
+                  <label for="email">E-Mail</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="ihre@mail.de"
+                    required
+                  />
+                </div>
 
-            <div class="form-row">
-              <label for="message">Nachricht</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="4"
-                placeholder="Beschreiben Sie Ihr Anliegen und mögliche Zeitfenster."
-              ></textarea>
-            </div>
-            <div class="form-row form-row-hidden">
-              <label for="website">Ihre Website</label>
-              <input
-                id="website"
-                name="website"
-                type="text"
-                autocomplete="off"
-              />
-            </div>
+                <div class="form-row">
+                  <label for="phone">Telefon (optional)</label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    placeholder="z. B. 0156 12345678"
+                  />
+                </div>
 
-            <button class="btn btn-primary" type="submit">
-              Termin anfragen
-            </button>
-          </form>
+                <div class="form-row">
+                  <label for="concern">Behandlungswunsch</label>
+                  <select id="concern" name="concern">
+                    <option>Rückenbeschwerden</option>
+                    <option>Sportverletzung</option>
+                    <option>Nach Operation</option>
+                    <option>Lymphdrainage</option>
+                    <option>Allgemeine Anfrage</option>
+                  </select>
+                </div>
+
+                <div class="form-row">
+                  <label for="message">Nachricht</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    placeholder="Beschreiben Sie Ihr Anliegen und mögliche Zeitfenster."
+                  ></textarea>
+                </div>
+
+                <div class="form-row form-row-hidden">
+                  <label for="website">Ihre Website</label>
+                  <input
+                    id="website"
+                    name="website"
+                    type="text"
+                    autocomplete="off"
+                  />
+                </div>
+
+                <button class="btn btn-primary" type="submit">
+                  Terminanfrage senden
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -574,6 +686,16 @@
         <p class="footer-meta">
           © <span id="year"></span> PhysioVital (Platzhalter). Diese Website ist
           ein Demo-Projekt und enthält keine echten rechtlichen Angaben.
+        </p>
+
+        <p class="footer-meta footer-meta--lumencat">
+          Erstellt von
+          <a
+            href="https://lumencat.de"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Lumencat – Webdesign & Automation</a
+          >.
         </p>
       </div>
     </footer>
